@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="forumMS">
+		<jta-data-source>java:/forumMS</jta-data-source>
+		<class>persistance.ActivityHistory</class>
+		<class>persistance.Event</class>
+		<class>persistance.Group</class>
+		<class>persistance.RateTopic</class>
+		<class>persistance.Section</class>
+		<class>persistance.Services</class>
+		<class>persistance.SubSection</class>
+		<class>persistance.Ticket</class>
+		<class>persistance.Topic</class>
+		<class>persistance.User</class>
+		<properties>
+			<property name="hibernate.hbm2ddl.auto" value="create-drop"/>
+		</properties>
+	</persistence-unit>
+</persistence>
